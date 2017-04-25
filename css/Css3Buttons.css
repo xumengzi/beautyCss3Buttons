@@ -1,0 +1,248 @@
+a,a:hover{
+	text-decoration: none;
+}
+.beautyCss3{
+    position: relative;
+    color: #4eb900;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: .37em 1.14em;
+    margin: .57em;
+    border: 1px solid #4eb900;
+    border-radius: .28em;
+    font-size: 1em;
+    line-height: 1.4;
+    white-space: nowrap;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    z-index: 100;
+}
+.beautyCss3:hover{
+	/*color: #fff;*/
+}
+
+/*滑入效果*/
+/*leftToRight*/
+.leftToRight::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	color: #fff;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.leftToRight::before{
+	content: attr(data-title);
+	left: -100%;
+	border-radius: .28em;
+}
+.leftToRight:hover::before{
+	transform: translateX(100%);
+}
+
+/*rightToLeft*/
+.rightToLeft::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	color: #fff;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.rightToLeft::before{
+	content: attr(data-title);
+	right: -100%;
+	border-radius: .28em;
+}
+.rightToLeft:hover::before{
+	transform: translateX(-100%);
+}
+
+/*topToBottom*/
+.topToBottom::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.topToBottom::before{
+	content: attr(data-title);
+	top: -100%;
+	border-radius: .28em;
+}
+.topToBottom:hover::before{
+	transform: translateY(100%);
+}
+
+/*bottomToTop*/
+.bottomToTop::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.bottomToTop::before{
+	content: attr(data-title);
+	bottom: -100%;
+	border-radius: .28em;
+}
+.bottomToTop:hover::before{
+	transform: translateY(-100%);
+}
+
+/*sideToCenter*/
+.sideToCenter::before,.sideToCenter::after{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    line-height: 220%;
+    /* padding: 4px 30px; */
+    display: block;
+    color: #fff;
+    vertical-align: middle;
+    background: #4eb900;
+    transition: .4s ease;
+    z-index: 99;
+}
+.sideToCenter::before{
+	content: attr(data-title-left);
+	left: -50%;
+	text-align: right;
+	border-top-left-radius:.28em;
+	border-bottom-left-radius:.28em;
+}
+.sideToCenter:hover::before{
+	transform: translateX(100%);
+}
+.sideToCenter::after{
+	content: attr(data-title-right);
+	right: -50%;
+	text-align: left;
+	border-top-right-radius:.28em;
+	border-bottom-right-radius:.28em;
+}
+.sideToCenter:hover::after{
+	transform: translateX(-100%);
+}
+
+
+/*顺时针旋转*/
+.centerRotateSide::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	opacity: 0;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.centerRotateSide::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.centerRotateSide:hover::before{
+	opacity: 1;
+	transform: rotate(360deg);
+}
+/*逆时针旋转*/
+.centerRotateSideReverse::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	opacity: 0;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.centerRotateSideReverse::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.centerRotateSideReverse:hover::before{
+	opacity: 1;
+	transform: rotate(-360deg);
+}
+
+
+
+/*放大*/
+.leftScaleRight::before{
+	width: 0%;
+	height: 0%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	opacity: 0;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.leftScaleRight::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.leftScaleRight:hover::before{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+/*中心发散*/
+.centerScaleSide::before{
+	width: 0%;
+	height: 0%;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	color: #fff;
+	opacity: 0;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.centerScaleSide::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.centerScaleSide:hover::before{
+	width: 100%;
+	height: 100%;
+	bottom: 0%;
+	left: 0%;
+	opacity: 1;
+}

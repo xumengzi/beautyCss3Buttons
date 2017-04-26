@@ -150,7 +150,7 @@ a,a:hover{
 }
 
 
-/*顺时针旋转*/
+/*顺时针绕中心旋转*/
 .centerRotateSide::before{
 	width: 100%;
 	height: 100%;
@@ -172,7 +172,7 @@ a,a:hover{
 	opacity: 1;
 	transform: rotate(360deg);
 }
-/*逆时针旋转*/
+/*逆时针绕中心旋转*/
 .centerRotateSideReverse::before{
 	width: 100%;
 	height: 100%;
@@ -194,11 +194,53 @@ a,a:hover{
 	opacity: 1;
 	transform: rotate(-360deg);
 }
+/*水平方向旋转*/
+.horizontalRotate::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	color: #fff;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .8s ease;
+	z-index: 99;
+}
+.horizontalRotate::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.horizontalRotate:hover::before{
+	opacity: 1;
+	transform: rotateX(360deg);
+}
+/*垂直方向旋转*/
+.verticalRotate::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	color: #fff;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .8s ease;
+	z-index: 99;
+}
+.verticalRotate::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.verticalRotate:hover::before{
+	opacity: 1;
+	transform: rotateY(360deg);
+}
 
-
-
-/*放大*/
-.leftScaleRight::before{
+/*左下角到右上角-放大*/
+.leftBotScaleRight::before{
 	width: 0%;
 	height: 0%;
 	position: absolute;
@@ -211,11 +253,83 @@ a,a:hover{
 	transition: .4s ease;
 	z-index: 99;
 }
-.leftScaleRight::before{
+.leftBotScaleRight::before{
 	content: attr(data-title);
 	border-radius: .28em;
 }
-.leftScaleRight:hover::before{
+.leftBotScaleRight:hover::before{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+/*左上角到右下角-放大*/
+.leftTopScaleRight::before{
+	width: 0%;
+	height: 0%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	opacity: 0;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.leftTopScaleRight::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.leftTopScaleRight:hover::before{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+/*右上角到左下角-放大*/
+.rightTopScaleLeft::before{
+	width: 0%;
+	height: 0%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	opacity: 0;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.rightTopScaleLeft::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.rightTopScaleLeft:hover::before{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+/*右下角到左上角-放大*/
+.rightBotScaleLeft::before{
+	width: 0%;
+	height: 0%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	opacity: 0;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .4s ease;
+	z-index: 99;
+}
+.rightBotScaleLeft::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.rightBotScaleLeft:hover::before{
 	width: 100%;
 	height: 100%;
 	opacity: 1;

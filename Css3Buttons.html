@@ -18,6 +18,9 @@
 			    background: #fff;
 			    /* border: 1px solid #ccc; */
 			}
+			.nav {
+			    z-index: 999;
+			}
 		</style>
 	</head>
 	<body>
@@ -31,66 +34,109 @@
 			<ol class="brif">
 				<li class="summary">2D版-滑入</li>
 				<ul>
-					<li>动画：从两边向中间过渡<span class="tips">由于动画是从两边向中间过渡，所以我在a标签上写了2个自定义属性。主要是放在before和after为元素里。</span></li>
+					<li>动画：<span class="w_color_g">从两边向中间过渡</span><span class="tips">该动画需要两个个data-title属性，一个放在before里，另外一个放在after里</span></li>
 					<li>
 						<a class="beautyCss3 sideToCenter" data-title-left='返回' data-title-right='首页' href="javascript:void(0)">返回首页</a>
 						<a class="beautyCss3 sideToCenter" data-title-left='提' data-title-right='交' href="javascript:void(0)">提交</a>
 						<a class="beautyCss3 sideToCenter" data-title-left='取' data-title-right='消' href="javascript:void(0)">取消</a>
 						<a class="beautyCss3 sideToCenter" data-title-left='lo' data-title-right='gin' href="javascript:void(0)">login</a>
 					</li>
-					<li>动画：从左往右过渡</li>
+					<li>动画：<span class="w_color_g">从左往右过渡</span><span class="tips">该动画只需一个data-title属性</span></li>
 					<li>
 						<a class="beautyCss3 leftToRight" data-title='返回首页' href="javascript:void(0)">返回首页</a>
 						<a class="beautyCss3 leftToRight" data-title='提交' href="javascript:void(0)">提交</a>
 						<a class="beautyCss3 leftToRight" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 leftToRight" data-title='login' href="javascript:void(0)">login</a>
 					</li>
-					<li>动画：从右往左过渡</li>
+					<li>动画：<span class="w_color_g">从右往左过渡</span><span class="tips">该动画只需一个data-title属性</span></li>
 					<li>
 						<a class="beautyCss3 rightToLeft" data-title='返回首页' href="javascript:void(0)">返回首页</a>
 						<a class="beautyCss3 rightToLeft" data-title='提交' href="javascript:void(0)">提交</a>
 						<a class="beautyCss3 rightToLeft" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 rightToLeft" data-title='login' href="javascript:void(0)">login</a>
 					</li>
-					<li>动画：从上往下过渡</li>
+					<li>动画：<span class="w_color_g">从上往下过渡</span><span class="tips">该动画只需一个data-title属性</span></li>
 					<li>
 						<a class="beautyCss3 topToBottom" data-title='返回首页' href="javascript:void(0)">返回首页</a>
 						<a class="beautyCss3 topToBottom" data-title='提交' href="javascript:void(0)">提交</a>
 						<a class="beautyCss3 topToBottom" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 topToBottom" data-title='login' href="javascript:void(0)">login</a>
 					</li>
-					<li>动画：从下往上过渡</li>
+					<li>动画：<span class="w_color_g">从下往上过渡</span><span class="tips">该动画只需一个data-title属性</span></li>
 					<li>
 						<a class="beautyCss3 bottomToTop" data-title='返回首页' href="javascript:void(0)">返回首页</a>
 						<a class="beautyCss3 bottomToTop" data-title='提交' href="javascript:void(0)">提交</a>
 						<a class="beautyCss3 bottomToTop" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 bottomToTop" data-title='login' href="javascript:void(0)">login</a>
 					</li>
 				</ul>
 				<li class="summary">2D版-旋转</li>
 				<ul>
-					<li>动画：顺时针旋转</li>
+					<li>动画：<span class="w_color_g">顺时针绕中心旋转</span><span class="tips">该动画只需一个data-title属性</span></li>
 					<li>
 						<a class="beautyCss3 centerRotateSide" data-title='返回首页' href="javascript:void(0)">返回首页</a>
 						<a class="beautyCss3 centerRotateSide" data-title='提交' href="javascript:void(0)">提交</a>
 						<a class="beautyCss3 centerRotateSide" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 centerRotateSide" data-title='login' href="javascript:void(0)">login</a>
 					</li>
-					<li>动画：逆时针旋转</li>
+					<li>动画：<span class="w_color_g">逆时针绕中心旋转</span><span class="tips">该动画只需一个data-title属性</span></li>
 					<li>
 						<a class="beautyCss3 centerRotateSideReverse" data-title='返回首页' href="javascript:void(0)">返回首页</a>
 						<a class="beautyCss3 centerRotateSideReverse" data-title='提交' href="javascript:void(0)">提交</a>
 						<a class="beautyCss3 centerRotateSideReverse" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 centerRotateSideReverse" data-title='login' href="javascript:void(0)">login</a>
+					</li>
+					<li>动画：<span class="w_color_g">水平方向旋转</span><span class="tips">该动画只需一个data-title属性，动画时间为0.8s</span></li>
+					<li>
+						<a class="beautyCss3 horizontalRotate" data-title='返回首页' href="javascript:void(0)">返回首页</a>
+						<a class="beautyCss3 horizontalRotate" data-title='提交' href="javascript:void(0)">提交</a>
+						<a class="beautyCss3 horizontalRotate" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 horizontalRotate" data-title='login' href="javascript:void(0)">login</a>
+					</li>
+					<li>动画：<span class="w_color_g">垂直方向旋转</span><span class="tips">该动画只需一个data-title属性，动画时间为0.8s</span></li>
+					<li>
+						<a class="beautyCss3 verticalRotate" data-title='返回首页' href="javascript:void(0)">返回首页</a>
+						<a class="beautyCss3 verticalRotate" data-title='提交' href="javascript:void(0)">提交</a>
+						<a class="beautyCss3 verticalRotate" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 verticalRotate" data-title='login' href="javascript:void(0)">login</a>
 					</li>
 				</ul>
 				<li class="summary">2D版-放大</li>
 				<ul>
-					<li>动画：左下角到右上角</li>
+					<li>动画：<span class="w_color_g">左下角到右上角</span><span class="tips">该动画只需一个data-title属性</span></li>
 					<li>
-						<a class="beautyCss3 leftScaleRight" data-title='返回首页' href="javascript:void(0)">返回首页</a>
-						<a class="beautyCss3 leftScaleRight" data-title='提交' href="javascript:void(0)">提交</a>
-						<a class="beautyCss3 leftScaleRight" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 leftBotScaleRight" data-title='返回首页' href="javascript:void(0)">返回首页</a>
+						<a class="beautyCss3 leftBotScaleRight" data-title='提交' href="javascript:void(0)">提交</a>
+						<a class="beautyCss3 leftBotScaleRight" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 leftBotScaleRight" data-title='login' href="javascript:void(0)">login</a>
 					</li>
-					<li>动画：中心发散</li>
+					<li>动画：<span class="w_color_g">左上角到右下角</span><span class="tips">该动画只需一个data-title属性</span></li>
+					<li>
+						<a class="beautyCss3 leftTopScaleRight" data-title='返回首页' href="javascript:void(0)">返回首页</a>
+						<a class="beautyCss3 leftTopScaleRight" data-title='提交' href="javascript:void(0)">提交</a>
+						<a class="beautyCss3 leftTopScaleRight" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 leftTopScaleRight" data-title='login' href="javascript:void(0)">login</a>
+					</li>
+					<li>动画：<span class="w_color_g">右上角到左下角</span><span class="tips">该动画只需一个data-title属性</span></li>
+					<li>
+						<a class="beautyCss3 rightTopScaleLeft" data-title='返回首页' href="javascript:void(0)">返回首页</a>
+						<a class="beautyCss3 rightTopScaleLeft" data-title='提交' href="javascript:void(0)">提交</a>
+						<a class="beautyCss3 rightTopScaleLeft" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 rightTopScaleLeft" data-title='login' href="javascript:void(0)">login</a>
+					</li>
+					<li>动画：<span class="w_color_g">右下角到左上角</span><span class="tips">该动画只需一个data-title属性</span></li>
+					<li>
+						<a class="beautyCss3 rightBotScaleLeft" data-title='返回首页' href="javascript:void(0)">返回首页</a>
+						<a class="beautyCss3 rightBotScaleLeft" data-title='提交' href="javascript:void(0)">提交</a>
+						<a class="beautyCss3 rightBotScaleLeft" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 rightBotScaleLeft" data-title='login' href="javascript:void(0)">login</a>
+					</li>
+					<li>动画：<span class="w_color_g">中心发散</span><span class="tips">该动画只需一个data-title属性</span></li>
 					<li>
 						<a class="beautyCss3 centerScaleSide" data-title='返回首页' href="javascript:void(0)">返回首页</a>
 						<a class="beautyCss3 centerScaleSide" data-title='提交' href="javascript:void(0)">提交</a>
 						<a class="beautyCss3 centerScaleSide" data-title='取消' href="javascript:void(0)">取消</a>
+						<a class="beautyCss3 centerScaleSide" data-title='login' href="javascript:void(0)">login</a>
 					</li>
 				</ul>
 				<li class="summary">2D版-淡入淡出</li>

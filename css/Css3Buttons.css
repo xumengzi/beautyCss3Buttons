@@ -360,3 +360,127 @@ a,a:hover{
 	left: 0%;
 	opacity: 1;
 }
+
+/*淡出*/
+.fadeOut::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	opacity: 1;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .6s ease;
+	z-index: 99;
+}
+.fadeOut::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.fadeOut:hover::before{
+	transform: rotateX(-90deg);
+	opacity: 0;
+}
+/*淡入*/
+.fadeIn::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	opacity: 0;
+	line-height: 220%;
+	background: #4eb900;
+	transition: .8s ease;
+	z-index: 99;
+}
+.fadeIn::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.fadeIn:hover::before{
+	opacity: 1;
+}
+
+
+
+/*向左翻书*/
+.threeD{
+	perspective: 800px;
+    -webkit-perspective: 800px;
+}
+.openToLeft{
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+.openToLeft::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    opacity: 0;
+    line-height: 220%;
+    background: #4eb900;
+    -webkit-transition: .8s ease;
+    transition: .8s ease;
+    transform-origin: left;
+    z-index: 99;
+    content: attr(data-title);
+    border-radius: .28em;
+}
+.openToLeft::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.openToLeft:hover::before{
+	transform: rotateY(-90deg);
+	opacity: 1;
+}
+
+/*向右翻书*/
+.threeD{
+	perspective: 800px;
+    -webkit-perspective: 800px;
+}
+.openToRight{
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+.openToRight::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    opacity: 0;
+    line-height: 220%;
+    background: #4eb900;
+    -webkit-transition: .8s ease;
+    transition: .8s ease;
+    transform-origin: right;
+    z-index: 99;
+    content: attr(data-title);
+    border-radius: .28em;
+}
+.openToRight::before{
+	content: attr(data-title);
+	border-radius: .28em;
+}
+.openToRight:hover::before{
+	transform: rotateY(-90deg);
+	opacity: 1;
+}
+
+@media screen and (max-width: 640px){
+	.beautyCss3{
+		margin: 0;
+	}
+}

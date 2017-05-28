@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fafbfb;
+  overflow-x: hidden;
+  font-family: "Microsoft YaHei";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: url(http://xumengzi.top/images/Arrow.cur), auto;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: url(http://xumengzi.top/images/Hand.cur), auto;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto 100px;
+  font-size: 16px;
+}
+
+.related {
+  width: 170px;
+  margin: 0 auto 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+.related .classification {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 13px;
+  margin: 0px 2px;
+  vertical-align: baseline;
+  white-space: nowrap;
+  background-color: #f2f2f2;
+}
+
+.code {
+  overflow: auto;
+  word-wrap: normal;
+  margin: 0 0 1.275em;
+  padding: .85em 1em;
+  background: #f7f7f7;
+    font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  direction: ltr;
+  border: none;
+  color: #718c00;
+}
+
+.w_color_g {
+  color: green;
+}
+
+.w_color_r {
+  color: #B22222;
+}
+
+.tips {
+  color: #999;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.intro {
+  text-indent: 38px;
+}
+
+.brif {
+  font-size: 14px;
+}
+.brif img{
+  max-width: 100%;
+}
+.brif > li {
+  margin: 14px 0;
+  border-bottom: 1px transparent solid;
+  transition: .4s ease-in-out;
+}
+
+.brif > li.line {
+  filter: brightness(1.5);
+  -webkit-filter: brightness(1.5);
+  color: green;
+  border-bottom: 1px green solid;
+}
+
+.brif ul {
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+.brif ul li {
+  margin: 4px 0;
+}
+
+.nav {
+  position: fixed;
+  left: 10px;
+  top: 4px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  list-style: none;
+  width: 80px;
+  height: 24px;
+  float: left;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: center;
+  cursor: url(http://xumengzi.top/images/Hand.cur), auto;
+}
+
+.nav ul li:hover {
+  color: #fff;
+  border-radius: 4px;
+  background: linear-gradient(to top, #47a719, #8ce660);
+  -o-background: linear-gradient(to top, #47a719, #8ce660);
+  -webkit-background: linear-gradient(to top, #47a719, #8ce660);
+}
+
+.img_list {
+  width: 300px;
+  margin: 10px auto;
+  border: 1px #ccc solid;
+  box-shadow: 2px 2px 10px #ccc;
+}
+
+.img_list img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=blog.css.map */
+
+
+
+/*媒体查询*/
+@media screen and (max-width: 640px){
+      .content{
+        margin: 0 auto;
+      }
+      .nav{
+        display: none;
+      }
+      .intro{
+        padding: 0 1em;
+      }
+      .brif{
+          padding: 1em;
+            padding-top: 0;
+      }
+      .brif > li{
+        margin: .6em;
+      }
+      .brif > ul{
+          padding-left: 1.8em;
+          padding-right: .2em;
+      }
+}
+
+
+/*滚动条*/
+::-webkit-scrollbar
+{
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: #CCCCCC;
+    -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical
+{
+    height: 5px;
+    background-color: #999999;
+    -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal
+{
+    width: 5px;
+    background-color: #CCCCCC;
+    -webkit-border-radius: 6px;
+}

@@ -139,8 +139,6 @@ a.beautyCss3:active{
 	content: attr(data-title-right);
 	right: -50%;
 	text-align: left;
-	border-top-right-radius:.28em;
-	border-bottom-right-radius:.28em;
 }
 .sideToCenter:hover::after{
 	transform: translateX(-100%);

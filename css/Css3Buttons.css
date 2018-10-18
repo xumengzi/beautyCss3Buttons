@@ -337,7 +337,6 @@ a.beautyCss3:active{
 }
 .centerScaleSide::before{
 	content: attr(data-title);
-	
 }
 .centerScaleSide:hover::before{
 	width: 100%;
@@ -345,6 +344,79 @@ a.beautyCss3:active{
 	bottom: 0%;
 	left: 0%;
 	opacity: 1;
+}
+
+/*边框从左往右放大*/
+.borderToRight{
+	border-color: transparent;
+}
+.borderToRight::before{
+	width: 0%;
+	height: 0%;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	color: #fff;
+	line-height: 220%;
+	transition: .4s ease;
+	border-bottom: 1px #4eb900 solid;
+	z-index: 99;
+}
+.borderToRight::before{
+	content: attr(data-title);
+}
+.borderToRight:hover::before{
+	width: 100%;
+}
+
+/*边框从左边进入， 右边出来*/
+.leftInRightOut{
+	border-color: transparent;
+}
+.leftInRightOut::before{
+	width: 100%;
+	height: 0%;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	color: #fff;
+	line-height: 220%;
+	transition: transform .4s ease;
+	border-bottom: 1px #4eb900 solid;
+	transform: scaleX(0);
+    transform-origin: 100% 0;
+	z-index: 99;
+}
+.leftInRightOut::before{
+	content: attr(data-title);
+}
+.leftInRightOut:hover::before{
+	transform: scaleX(1);
+    transform-origin: 0 0;
+}
+
+/*边框从中心发散*/
+.centerToSide{
+	border-color: transparent;
+}
+.centerToSide::before{
+	width: 0%;
+	height: 0%;
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	color: #fff;
+	line-height: 220%;
+	transition: .4s ease;
+	border-bottom: 1px #4eb900 solid;
+	z-index: 99;
+}
+.centerToSide::before{
+	content: attr(data-title);
+}
+.centerToSide:hover::before{
+	width: 100%;
+	left: 0%;
 }
 
 /*淡出*/
